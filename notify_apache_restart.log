@@ -1,0 +1,2 @@
+apachectl -k graceful
+At 11:35 on 30/09/19, file /tmp/nc_test.conf was backed up via rsync

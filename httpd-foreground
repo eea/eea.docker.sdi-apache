@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+# Apache gets grumpy about PID files pre-existing
+rm -f /usr/local/apache2/logs/httpd.pid
+
+sh /inotify_apache_restart.sh > /tmp/inotify_apache_restart.log &
+
+exec httpd -DFOREGROUND "$@"
