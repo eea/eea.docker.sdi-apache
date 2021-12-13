@@ -1,13 +1,12 @@
-FROM httpd:2.4.51
+FROM httpd:2.4.51-alpine
 
 MAINTAINER michimau <mauro.michielon@eea.europa.eu>
 
-RUN apt-get -y update
-RUN apt-get -y install \
-               #vim \
-               libapache2-mod-evasive
-               #inotify-tools \
-               #vim 
+#RUN apk add \
+#               #vim \
+#               libapache2-mod-evasive
+#               #inotify-tools \
+#               #vim 
 
 ADD httpd.conf /usr/local/apache2/conf/
 RUN echo "Include conf/extra/ssl.conf" >> /usr/local/apache2/conf/httpd.conf
