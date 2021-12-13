@@ -4,7 +4,7 @@ MAINTAINER michimau <mauro.michielon@eea.europa.eu>
 
 RUN apt-get -y update
 RUN apt-get -y install \
-               vim \
+               #vim \
                libapache2-mod-evasive
                #inotify-tools \
                #vim 
