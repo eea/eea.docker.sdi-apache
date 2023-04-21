@@ -1,6 +1,6 @@
-FROM httpd:2.4.51-alpine
+FROM httpd:2.4.57-alpine
 
-MAINTAINER michimau <mauro.michielon@eea.europa.eu>
+MAINTAINER roug <soren.roug@eea.europa.eu>
 
 #RUN apk add \
 #               #vim \
