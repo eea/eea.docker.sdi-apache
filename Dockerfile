@@ -1,4 +1,4 @@
-FROM httpd:2.4.62-alpine3.20
+FROM httpd:2.4.65-alpine
 
 MAINTAINER roug <soren.roug@eea.europa.eu>
 
